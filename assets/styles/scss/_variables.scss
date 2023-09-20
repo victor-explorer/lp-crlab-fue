@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Flex:wght@400;700&display=swap');
+
+
+//Colors
+$white: #FFFFFF;
+$black: #000000;
+$black-10: #101010;
+$yellow: #FFE36C;
+
+//font-sizes
+$default: 1rem;
+$md: 1.125rem;
+$lg: 1.25rem;
+$xl: 1.5rem;
+$h-default: 2.1875rem; //35px
+$h-md: 2.5rem; //40px
+$h-lg: 3.75rem; //60px
+$h-xl: 5rem; //80px
+
+// sizes
+$size-xsm: 0.5rem;
+$size-sm: 0.75rem;
+$size-md: 1rem;
+$size-lg: 2rem;
+$size-xl: 3rem;
+$size-xxl: 3.75rem;
+
+
+@mixin font($weight: 400, $size: $default) {
+  font: normal $weight $size 'Roboto Flex', sans-serif;
+}
+
+@mixin font-title($size: $h-default) {
+  font: normal 700 $size 'DM Serif Display', serif;
+}

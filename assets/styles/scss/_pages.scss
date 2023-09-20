@@ -1,0 +1,101 @@
+@use 'variables';
+@use 'typography';
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @include font(500, $lg);
+
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+
+  transition: all 100ms ease;
+
+  color: $black;
+  line-height: 30px;
+
+  &.menuIsOpen {
+    overflow: hidden;
+
+    .overlay {
+      visibility: visible;
+    }
+  }
+
+  @media (max-width: 1366px) {
+    @include font(500, $md);
+    line-height: 25px;
+
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include font-title();
+}
+
+/*Overlay*/
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 100;
+
+  visibility: hidden;
+
+  @media (min-width: 1120px) {
+    display: none;
+  }
+}
+
+/*Section Wrapper*/
+.wrapper {
+  padding: $size-xxl 0;
+
+  @media (max-width: 576px) {
+    padding: $size-lg $lg;
+
+  }
+}
+
+/*Hero*/
+.hero-wrapper {
+  padding: 0 2rem;
+
+  .hero-image {
+    padding: 0;
+
+    img {
+      @extend .responsive-image;
+    }
+  }
+
+  .hero-content {
+    p {
+      max-width: 75%;
+    }
+
+    @media (max-width: 576px) {
+      padding-top: 1rem;
+
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+}

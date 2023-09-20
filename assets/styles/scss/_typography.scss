@@ -1,0 +1,40 @@
+@use 'variables';
+
+.banner-heading {
+  @include font-title($h-xl);
+  color: $yellow;
+  line-height: $h-md;
+
+  & span {
+    color: $white;
+    @include font-title($h-md);
+    line-height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+    line-height: 4rem;
+
+    & span {
+      @include font-title(1.875rem);
+    }
+  }
+}
+
+.section-heading {
+  @include font-title($h-lg);
+  color: inherit;
+
+  @media (max-width: 768px) {
+    font-size: 2.75rem;
+  }
+}
+
+.section-subtitle {
+  @include font-title(1.875rem);
+  color: inherit;
+}
+
+.strong-text {
+  @include font(700, 2.25rem);
+}

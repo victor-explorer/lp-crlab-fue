@@ -1,0 +1,273 @@
+@use 'variables';
+@use 'typography';
+
+/************************Start Header****************************/
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 999;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 0;
+
+  .logo {
+    text-decoration: none;
+  }
+
+  .mobile-menu-trigger {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 5px;
+      width: 100%;
+      background-color: $white;
+      position: absolute;
+      border-radius: 6px;
+
+      &.top {
+        top: 10px;
+      }
+
+      &.middle {
+        top: 22px
+      }
+
+      &.bottom {
+        bottom: 10px;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: -100px;
+
+    height: 100%;
+    width: 80vw;
+    opacity: 0;
+
+    background-color: $white;
+    color: $black;
+    font-size: 1rem;
+
+    overflow: hidden;
+
+    transform: translateX(70vw);
+
+    transition: transform 300ms ease, opacity 100ms ease;
+
+    @media (max-width: 768px) {
+      font-size: 1.125rem;
+    }
+
+    .nav-links-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-items: center;
+
+      margin-top: 5rem;
+
+      .close-menu-button {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        font-size: 3rem;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      text-align: center;
+
+      &.crlab-button {
+        color: $white;
+      }
+
+      &:hover {
+        transition: opacity 0.2s;
+        opacity: 0.7;
+      }
+    }
+
+    &.menuIsOpen {
+      height: 100vh;
+      right: 0;
+      padding: 3rem 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media (min-width: 1120px) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /*Menu*/
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: $white;
+      text-transform: uppercase;
+
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+
+      font-size: 0.9375rem;
+      font-weight: 400;
+
+      &:hover {
+        color: $yellow;
+        transition: all 0.2s;
+      }
+
+      &:active {
+        color: $yellow;
+      }
+    }
+
+    @media (max-width: 1120px) {
+      display: none;
+    }
+  }
+
+  .crlab-button {
+    font-size: 0.9375rem;
+    padding: 1rem 1.5rem;
+  }
+
+  @media (max-width: 1120px) {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+
+    justify-content: space-between;
+  }
+}
+
+/************************End Header****************************/
+
+/************************Start Banner****************************/
+.crlab-banner-container {
+  height: 95vh;
+  position: relative;
+
+  display: flex;
+  align-items: end;
+
+  padding-bottom: 5rem;
+
+  @media (max-width: 1120px) {
+    height: 95vh;
+  }
+
+  .crlab-fullbanner-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .carousel-banner,
+    .slick-list,
+    .slick-track {
+      width: 100%;
+      height: 100%;
+    }
+
+    .crlab-fullbanner-background {
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      &.banner-1 {
+        background-image: url(../../images/fullBanner-0.webp);
+      }
+
+      &.banner-2 {
+        background-image: url(../../images/fullBanner-1.webp);
+      }
+
+      @media(max-width: 576px) {
+        &.banner-1 {
+          background-image: url(../../images/fullBannerMobile-0.webp);
+        }
+  
+        &.banner-2 {
+          background-image: url(../../images/fullBanner-1.webp);
+        }
+      }
+    }
+  }
+}
+
+/************************End Banner****************************/
+
+.logo {
+  max-width: 190px;
+
+  img {
+    @extend .responsive-image;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-width: 131px;
+  }
+}
+
+.crlab-background {
+  background-color: $black;
+  color: $yellow;
+
+  .crlab-button {
+    background-color: $yellow;
+    color: $black;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
