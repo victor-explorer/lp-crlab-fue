@@ -202,6 +202,16 @@ header {
     height: 95vh;
   }
 
+  @media (min-height: 800px) {
+    align-items: center;
+    padding-bottom: 0rem;
+  }
+
+  @media (max-width: 576px) {
+    align-items: end;
+    padding-bottom: 5rem;
+  }
+
   .crlab-fullbanner-wrapper {
     position: absolute;
     z-index: -1;
@@ -220,22 +230,36 @@ header {
     .crlab-fullbanner-background {
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
 
-      &.banner-1 {
+      &.banner-0 {
         background-image: url(../../images/fullBanner-0.webp);
       }
 
-      &.banner-2 {
+      &.banner-1 {
         background-image: url(../../images/fullBanner-1.webp);
       }
 
-      @media(max-width: 576px) {
-        &.banner-1 {
-          background-image: url(../../images/fullBannerMobile-0.webp);
+      @media(max-width: 1024px) {
+        &.banner-0 {
+          background-position: 30% 20%;
+          background-size: 250%;
         }
-  
-        &.banner-2 {
-          background-image: url(../../images/fullBanner-1.webp);
+
+        &.banner-1 {
+          background-image: url(../../images/fullBannerMobile-1.webp);
+        }
+      }
+
+      @media(max-width: 768px) {
+        &.banner-0 {
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../../images/fullBannerMobile-0.webp);
+          background-position: 30% 20%;
+          background-size: 450%;
+        }
+
+        &.banner-1 {
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(../../images/fullBannerMobile-1.webp);
         }
       }
     }
@@ -265,9 +289,20 @@ header {
   .crlab-button {
     background-color: $yellow;
     color: $black;
-
-    &:hover {
-      color: $yellow;
-    }
   }
+}
+
+.nations {
+  width: 190px;
+}
+
+.info-about {
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.copy {
+  font-size: 1rem;
 }

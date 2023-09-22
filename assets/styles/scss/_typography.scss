@@ -3,12 +3,13 @@
 .banner-heading {
   @include font-title($h-xl);
   color: $yellow;
-  line-height: $h-md;
+  line-height: 100%;
 
-  & span {
+  p {
     color: $white;
     @include font-title($h-md);
     line-height: 100%;
+    margin-top: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -25,8 +26,12 @@
   @include font-title($h-lg);
   color: inherit;
 
+  @media (max-width: 1366px) {
+    font-size: 3rem;
+  }
+
   @media (max-width: 768px) {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 }
 
@@ -37,4 +42,8 @@
 
 .strong-text {
   @include font(700, 2.25rem);
+
+  @media (max-width: 1366px) {
+    font-size: 2rem;
+  }
 }

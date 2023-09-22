@@ -6,6 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  <!-- Google Tag Manager -->
+  <!-- <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MG4HQB9V');
+  </script> -->
+  <!-- End Google Tag Manager -->
+
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -22,6 +42,11 @@
 </head>
 
 <body>
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG4HQB9V" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
 
   <header>
     <div class="container header">
@@ -98,15 +123,18 @@
     <div class="crlab-banner-container">
       <div class="crlab-fullbanner-wrapper">
         <div class="carousel-banner">
+          <div class="crlab-fullbanner-background banner-0"></div>
           <div class="crlab-fullbanner-background banner-1"></div>
-          <div class="crlab-fullbanner-background banner-2"></div>
         </div>
       </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
-            <h1 class="banner-heading">Transplante FUE <span><br>na maior clínica de <br> saúde capilar do mundo</span></h1>
+          <div class="col-lg-8">
+            <div class="banner-heading">
+              <h1 class="banner-heading">Transplante FUE</h1>
+              <p>na maior clínica de <br> saúde capilar do mundo</p>
+            </div>
 
             <ul class="crlab-custom-list">
               <li>
@@ -177,23 +205,23 @@
       </div>
     </section>
 
-    <div class="d-lg-block d-none">
+    <div>
       <div class="container-fluid p-0">
         <div class="row gap-0">
-          <div class="col-lg-3 p-0">
-            <img src="assets/images/gallery/1.webp" class="w-100 h-100" alt="Consultório CRLAB">
+          <div class="col-4 col-lg-3 p-0">
+            <img src="assets/images/gallery/1.webp" loading="lazy" class="w-100 h-100" alt="Consultório CRLAB">
           </div>
 
-          <div class="col-lg-3 p-0">
-            <img src="assets/images/gallery/2.webp" class="w-100 h-100" alt="Consultório CRLAB">
+          <div class="col-4 col-lg-3 p-0">
+            <img src="assets/images/gallery/2.webp" loading="lazy" class="w-100 h-100" alt="Consultório CRLAB">
           </div>
 
-          <div class="col-lg-3 p-0">
-            <img src="assets/images/gallery/3.webp" class="w-100 h-100" alt="Consultório CRLAB">
+          <div class="col-4  col-lg-3 p-0">
+            <img src="assets/images/gallery/3.webp" loading="lazy" class="w-100 h-100" alt="Consultório CRLAB">
           </div>
 
-          <div class="col-lg-3 p-0">
-            <img src="assets/images/gallery/4.webp" class="w-100 h-100" alt="Consultório CRLAB">
+          <div class="col-4 col-lg-3 p-0 d-none d-lg-block">
+            <img src="assets/images/gallery/4.webp" loading="lazy" class="w-100 h-100" alt="Consultório CRLAB">
           </div>
 
         </div>
@@ -203,44 +231,57 @@
     <section class="wrapper text-white" style="background-color: black;" id="resultados">
       <div class="container">
         <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="section-heading text-center">Confira o nosso resultado mais recente publicado:</h2>
+
+            <div class="row justify-content-between my-3 carousel-before-and-after gap-3">
+              <div class="col-lg-5">
+                <img src="assets/images/before-and-after/1.webp" alt="Tratamento" loading="lazy">
+              </div>
+              <div class="col-lg-5">
+                <img src="assets/images/before-and-after/2.webp" alt="Tratamento" loading="lazy">
+              </div>
+              <div class="col-lg-5">
+                <img src="assets/images/before-and-after/3.webp" alt="Tratamento" loading="lazy">
+              </div>
+              <div class="col-lg-5">
+                <img src="assets/images/before-and-after/2.webp" alt="Tratamento" loading="lazy">
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-10">
-            <h2 class="section-heading text-center">Confira o resultado mais recente publicado pela nossa equipe:</h2>
-
-            <div class="row justify-content-between my-5 carousel-before-and-after gap-3">
-              <div class="col-lg-5">
-                <img src="assets/images/before-and-after/1.webp" alt="Tratamento">
-              </div>
-              <div class="col-lg-5">
-                <img src="assets/images/before-and-after/2.webp" alt="Tratamento">
-              </div>
-              <div class="col-lg-5">
-                <img src="assets/images/before-and-after/2.webp" alt="Tratamento">
-              </div>
-              <div class="col-lg-5">
-                <img src="assets/images/before-and-after/2.webp" alt="Tratamento">
-              </div>
-            </div>
-
             <h2 class="section-heading text-center">Principais resultados:</h2>
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <ul class="crlab-custom-list">
-                  <li>
-                    Sem cicatrização
-                  </li>
-                  <li>
-                    Cabelo natural
-                  </li>
-                  <li>
-                    Retorno rápido a rotina
-                  </li>
-                  <li>
-                    Resultado rápido e definitivo após 12 meses do procedimento
-                  </li>
-                </ul>
+            <div class="row justify-content-lg-center gy-3">
+              <div class="col-lg-4">
+                <div class="crlab-list">
+                  <img src="assets/images/icons/check.svg" alt="">
+                  Sem cicatrização
+                </div>
               </div>
-            </div>
 
+              <div class="col-lg-4">
+                <div class="crlab-list">
+                  <img src="assets/images/icons/check.svg" alt="">
+                  Cabelo natural
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="crlab-list">
+                  <img src="assets/images/icons/check.svg" alt="">
+                  Retorno rápido a rotina
+                </div>
+              </div>
+
+              <div class="col-lg-12 text-lg-center">
+                <div class="crlab-list">
+                  <img src="assets/images/icons/check.svg" alt="">
+                  Resultado rápido e definitivo após <br> 12 meses do procedimento
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -249,7 +290,7 @@
     <section class="wrapper">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-lg-11">
+          <div class="col-lg-7">
             <div class="testimonial">
               <p>Fiz meu transplante capilar recentemente e adorei o resultado. Desde a adolescência vinha fazendo alguns tratamentos e o transplante trouxe um resultado incrível. Estou me sentindo mais jovem agora!</p>
               <strong>Paciente CRLAB</strong>
@@ -270,9 +311,8 @@
       <div class="container-fluid">
         <div class="row align-items-center">
           <div class="col-lg-5 p-0 overflow-hidden order-lg-first order-last mt-5 mt-lg-0">
-            <img src="assets/images/hero.webp" alt="" class="responsive-image d-lg-none">
-            <img src="assets/images/hero.webp" alt="" class="d-none d-lg-block">
-
+            <img src="assets/images/hero.webp" alt="" class="responsive-image d-lg-none" loading="lazy">
+            <img src="assets/images/hero.webp" alt="" class="d-none d-lg-block" loading="lazy">
           </div>
 
           <div class="col-lg-5 offset-lg-1">
@@ -306,7 +346,7 @@
       </div>
     </section>
 
-    <section class="wrapper">
+    <section class="wrapper pb-lg-0">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
@@ -322,7 +362,7 @@
                 <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@crlabsaopaulo/video/7223820414475177222" data-video-id="7223820414475177222" style="max-width: 605px;min-width: 325px;">
                   <section> <a target="_blank" title="@crlabsaopaulo" href="https://www.tiktok.com/@crlabsaopaulo?refer=embed">@crlabsaopaulo</a> A calvície é um problema para você? O tratamento FUE é a melhor solução! Saiba mais: 👨🏻‍💻br.crlab.com | 📱55 11 99586-0584 | 📍Rua Samuel Morse nº 134 - CJ 72 - Brooklyn - São Paulo <a title="tratamentocapilar" target="_blank" href="https://www.tiktok.com/tag/tratamentocapilar?refer=embed">#tratamentocapilar</a> <a title="cabelossaudaveis" target="_blank" href="https://www.tiktok.com/tag/cabelossaudaveis?refer=embed">#cabelossaudaveis</a> <a title="crlab" target="_blank" href="https://www.tiktok.com/tag/crlab?refer=embed">#crlab</a> <a title="fue" target="_blank" href="https://www.tiktok.com/tag/fue?refer=embed">#fue</a> <a target="_blank" title="♬ som original - CRLAB São Paulo" href="https://www.tiktok.com/music/som-original-7223820417788578565?refer=embed">♬ som original - CRLAB São Paulo</a> </section>
                 </blockquote>
-                
+
               </div>
 
               <div class="video-card">
@@ -397,7 +437,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h3 class="section-heading">
-              Passo a Passo para o Transplante FUE
+              Passo a Passo para o <br> Transplante FUE
             </h3>
           </div>
 
@@ -512,11 +552,10 @@
     <section>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-lg-10 p-0">
-            <a href="https://materiais.crlab.com.br/e-book-fue" target="_blank">
-              <img src="assets/images/ebookBanner.webp" alt=" Baixe agora nosso guia gratuito e descubra tudo que você precisa saber antes do seu procedimento!" class="responsive-image d-none d-lg-block">
-              <img src="assets/images/ebookBannerMobile.webp" alt=" Baixe agora nosso guia gratuito e descubra tudo que você precisa saber antes do seu procedimento!" class="responsive-image d-block d-lg-none">
-
+          <div class="col-lg-8 p-0 d-flex justify-content-center">
+            <a href="https://materiais.crlab.com.br/e-book-fue" target="_blank" class="ebook">
+              <img src="assets/images/ebookBanner.webp" alt=" Baixe agora nosso guia gratuito e descubra tudo que você precisa saber antes do seu procedimento!" class="responsive-image d-none d-lg-block" loading="lazy">
+              <img src="assets/images/ebookBannerMobile.webp" alt=" Baixe agora nosso guia gratuito e descubra tudo que você precisa saber antes do seu procedimento!" class="responsive-image d-block d-lg-none" loading="lazy">
             </a>
           </div>
         </div>
@@ -526,18 +565,18 @@
     <section class="wrapper">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center mb-5">
+          <div class="col-lg-8 text-center mb-5">
             <h3 class="section-heading">
               Artigos recentes sobre FUE
             </h3>
           </div>
 
-          <div class="col-lg-12">
+          <div class="col-lg-10">
             <div class="row carousel-articles">
               <div class="col-lg-4">
                 <article class="article-wrapper">
                   <a href="https://crlab.com.br/blog/tecnica-fue-tecnica-fue/o-que-e-a-tecnica-fue/" class="article-asset">
-                    <img src="assets/images/articles/1.webp" alt="" aria-label="O que é a Técnica FUE">
+                    <img src="assets/images/articles/1.webp" loading="lazy" alt="" aria-label="O que é a Técnica FUE">
                   </a>
 
                   <div class="article-content">
@@ -559,7 +598,7 @@
               <div class="col-lg-4">
                 <article class="article-wrapper">
                   <a href="https://crlab.com.br/blog/tecnica-fue/quem-pode-fazer-transplante-capilar-fue/" class="article-asset">
-                    <img src="assets/images/articles/2.webp" alt="" aria-label="Quem pode fazer o Transplante FUE?">
+                    <img src="assets/images/articles/2.webp" loading="lazy" alt="" aria-label="Quem pode fazer o Transplante FUE?">
                   </a>
 
                   <div class="article-content">
@@ -581,13 +620,13 @@
               <div class="col-lg-4">
                 <article class="article-wrapper">
                   <a href="https://crlab.com.br/blog/tecnica-fue/quais-sao-os-cuidados-pos-transplante-capilar-fue/" class="article-asset">
-                    <img src="assets/images/articles/3.webp" alt="" aria-label="Quais são os cuidados pós Transplante FUE?">
+                    <img src="assets/images/articles/3.webp" loading="lazy" alt="" aria-label="Quais são os cuidados pós Transplante FUE?">
                   </a>
 
                   <div class="article-content">
                     <h1>
                       <a href="https://crlab.com.br/blog/tecnica-fue/quais-sao-os-cuidados-pos-transplante-capilar-fue/">
-                        Quais são os cuidados pós Transplante FUE?
+                        Quais são os cuidados pós FUE?
                       </a>
                     </h1>
                   </div>
@@ -627,7 +666,7 @@
               </div>
               <div class="col-lg-6 p-0">
                 <div class="video-container">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/S7s7AectWb0?si=iZxHh31gzPLmDPc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/S7s7AectWb0?si=iZxHh31gzPLmDPc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen loading="lazy"></iframe>
                 </div>
               </div>
             </div>
@@ -735,13 +774,13 @@
 
     <section>
       <div class="maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.79165955309!2d-46.693741499999994!3d-23.611803699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c95ec8b247%3A0x93a2cc976ec369f1!2sEdif%C3%ADcio%20Berrini%20Plaza%20-%20R.%20Samuel%20Morse%2C%20134%20-%20Sala%2072%20-%20Cidade%20Mon%C3%A7%C3%B5es%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004576-060!5e0!3m2!1spt-BR!2sbr!4v1695148470505!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14623.16663821236!2d-46.6937415!3d-23.6118037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5145648c60d9%3A0xc06c06d12628351c!2sCRLAB%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1695324943034!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
   </main>
 
-  <footer class="py-5 px-5" style="background-color: black;">
+  <footer class="p-5" style="background-color: black;">
     <div class="container-fluid">
       <div class="row flex-column flex-lg-row justify-content-lg-between justify-content-center align-items-center gap-5 gap-lg-0">
         <div class="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start">
@@ -783,31 +822,38 @@
     </div>
   </footer>
 
-  <div class="wrapper">
+  <section class="py-3">
     <div class="container">
-      <div class="row align-items-center flex-column flex-lg-row gap-3">
-        <div class="col-lg-3">
-          <img src="assets/images/nations.webp" alt="Brasil e Itália" class="responsive-image">
-        </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 d-flex flex-column gap-3 info-about">
+          <img src="assets/images/nations.webp" alt="Brasil e Itália" class="responsive-image nations d-block mx-auto">
 
-        <div class="col">
           <p>
             A CRLAB é a maior clínica de estética e saúde capilar do mundo! Com mais de 50 anos de atuação e experiência em tratamentos capilares e patologias do couro cabeludo, a CRLAB se tornou a maior clínica de estética e saúde capilar do planeta, com sede na Itália e mais de 180 clínicas em 27 países.
           </p>
-        </div>
 
-        <div class="col-lg-12">
           <p>
             Importante: Os resultados podem variar de acordo com cada paciente e por isso é imprescindível uma avaliação detalhada com o médico tricologista.
           </p>
         </div>
+      </div>
+      <div class="col-lg-3">
+      </div>
+
+      <div class="col">
 
       </div>
+
+      <div class="col-lg-12">
+
+      </div>
+
     </div>
+  </section>
 
   </div>
 
-  <div class="p-3 text-white text-center" style="background-color: black;">
+  <div class="p-3 text-white text-center copy" style="background-color: black;">
     <em class="mb-0">CRLAB é uma marca registrada de: AdviHair S.r.l - Via Benini / <a href="https://www.crlab.com.br/politica-de-privacidade/" class="text-white">Política de Privacidade</a></em>
   </div>
 
@@ -815,9 +861,9 @@
   <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
 
   <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="assets/lib/slick/js/slick.min.js"></script>
+  <script type="text/javascript" src="assets/lib/slick/js/slick.min.js" type=”module”></script>
   <script type="text/javascript" src="assets/scripts/slick.js"></script>
-  <script type="text/javascript" src="assets/lib/aos/js/aos.js"></script>
+  <!-- <script type="text/javascript" src="assets/lib/aos/js/aos.js"></script> -->
   <script type="text/javascript" src="assets/scripts/main.js"></script>
   <script async src="https://www.tiktok.com/embed.js"></script>
 </body>
